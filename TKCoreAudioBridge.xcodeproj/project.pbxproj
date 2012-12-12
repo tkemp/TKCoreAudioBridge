@@ -10,6 +10,8 @@
 		BC6466661678D7DF00E8ABE9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC6466651678D7DF00E8ABE9 /* Foundation.framework */; };
 		BC64666B1678D7DF00E8ABE9 /* TKCoreAudioBridge.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = BC64666A1678D7DF00E8ABE9 /* TKCoreAudioBridge.h */; };
 		BC64666D1678D7DF00E8ABE9 /* TKCoreAudioBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = BC64666C1678D7DF00E8ABE9 /* TKCoreAudioBridge.m */; };
+		BC6466741678D82400E8ABE9 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC6466731678D82400E8ABE9 /* AudioToolbox.framework */; };
+		BC6466771678E50600E8ABE9 /* TKTestGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = BC6466761678E50600E8ABE9 /* TKTestGenerator.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,6 +33,9 @@
 		BC6466691678D7DF00E8ABE9 /* TKCoreAudioBridge-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TKCoreAudioBridge-Prefix.pch"; sourceTree = "<group>"; };
 		BC64666A1678D7DF00E8ABE9 /* TKCoreAudioBridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TKCoreAudioBridge.h; sourceTree = "<group>"; };
 		BC64666C1678D7DF00E8ABE9 /* TKCoreAudioBridge.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TKCoreAudioBridge.m; sourceTree = "<group>"; };
+		BC6466731678D82400E8ABE9 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		BC6466751678E50600E8ABE9 /* TKTestGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKTestGenerator.h; sourceTree = "<group>"; };
+		BC6466761678E50600E8ABE9 /* TKTestGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKTestGenerator.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC6466741678D82400E8ABE9 /* AudioToolbox.framework in Frameworks */,
 				BC6466661678D7DF00E8ABE9 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -48,6 +54,7 @@
 		BC6466571678D7DF00E8ABE9 = {
 			isa = PBXGroup;
 			children = (
+				BC6466731678D82400E8ABE9 /* AudioToolbox.framework */,
 				BC6466671678D7DF00E8ABE9 /* TKCoreAudioBridge */,
 				BC6466641678D7DF00E8ABE9 /* Frameworks */,
 				BC6466631678D7DF00E8ABE9 /* Products */,
@@ -75,6 +82,8 @@
 			children = (
 				BC64666A1678D7DF00E8ABE9 /* TKCoreAudioBridge.h */,
 				BC64666C1678D7DF00E8ABE9 /* TKCoreAudioBridge.m */,
+				BC6466751678E50600E8ABE9 /* TKTestGenerator.h */,
+				BC6466761678E50600E8ABE9 /* TKTestGenerator.m */,
 				BC6466681678D7DF00E8ABE9 /* Supporting Files */,
 			);
 			path = TKCoreAudioBridge;
@@ -140,6 +149,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BC64666D1678D7DF00E8ABE9 /* TKCoreAudioBridge.m in Sources */,
+				BC6466771678E50600E8ABE9 /* TKTestGenerator.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -199,6 +209,7 @@
 				DSTROOT = /tmp/TKCoreAudioBridge.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TKCoreAudioBridge/TKCoreAudioBridge-Prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -211,6 +222,7 @@
 				DSTROOT = /tmp/TKCoreAudioBridge.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TKCoreAudioBridge/TKCoreAudioBridge-Prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
