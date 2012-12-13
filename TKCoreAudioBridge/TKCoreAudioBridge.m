@@ -1,9 +1,9 @@
 //
 //  TKCoreAudioBridge.m
-//  Cellular
+//  TKCoreAudioBridge
 //
 //  Created by Tim Kemp on 26/09/2012.
-//  Copyright (c) 2012 Liminal Dynamics. All rights reserved.
+//  Copyright (c) 2012 Tim Kemp. All rights reserved.
 //
 
 #import <AudioToolbox/AudioToolbox.h>
